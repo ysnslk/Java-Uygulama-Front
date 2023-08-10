@@ -1,0 +1,44 @@
+p{
+    color: red;
+}
+p + p {
+    color: black;
+}
+p + p +p{
+    color: blue;
+}
+#direct-id{
+    background-color: blueviolet;
+    color: black;
+}
+h2{
+    color: cornflowerblue;
+}
+ul{
+    background-color: aquamarine;
+}
+ul > li > a{
+    color: rgb(255, 255, 255);
+}
+a{
+    color: white;
+    background-color: black;
+}
+ol > li:first-child{
+    background-color: deeppink;
+    color: blue;
+}
+ol > li + li{
+    background-color: gray;
+}
+ol> li:nth-child(3){
+    background-color: deeppink;
+}
+ol> li:last-child{
+    color: red;
+}
+.last-p{
+    background-color: blue;
+    color: red;
+}
+

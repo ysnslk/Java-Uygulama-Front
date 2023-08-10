@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 2000px;
+  height: 2000px;
+}
+.container {
+  border: 5px solid blue;
+  width: 800px;
+  height: 750px;
+}
+.op {
+  background-color: bisque;
+  position: relative;
+  height: 240px;
+  width: 240px;
+  left: 10px;
+  top: 150px;
+  border: 2px solid rgb(175, 4, 4);
+  opacity: 0.461;
+}
+.abs2,
+.abs3,
+.rel,
+.sticky,
+.fixed {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  text-align: center;
+}
+.abs2 {
+  background-color: aqua;
+  justify-content: center;
+  position: absolute;
+  top: 65px;
+  left: 15px;
+}
+
+.abs3 {
+  background-color: yellow;
+  justify-content: center;
+  position: absolute;
+  top: 35px;
+  left: 45px;
+}
+.rel {
+  background-color: pink;
+  position: relative;
+  left: 230px;
+  bottom: 150px;
+  z-index: -1;
+}
+.sticky {
+  background-color: green;
+  position: sticky;
+  top: 395px;
+  left: 160px;
+}
+.fixed {
+  background-color: blue;
+  position: fixed;
+  top: 0;
+  left: 10px;
+}

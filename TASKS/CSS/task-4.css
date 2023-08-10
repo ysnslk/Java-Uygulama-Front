@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header > nav > ul {
+  background-color: rgb(54, 52, 52);
+}
+header > nav > ul > li {
+  display: inline-block;
+  color: white;
+  padding: 10px;
+}
+header > nav > ul > li > a {
+  color: white;
+  text-decoration: none;
+}
+header > nav > ul > li:hover {
+  background-color: rgb(44, 43, 43);
+}
+main {
+  text-align: center;
+  background-color: rgb(220, 216, 216);
+}
+main > img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+main > h3 {
+  padding: 10px;
+}
+main > p {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+main ul > li {
+  display: inline-block;
+}
+main ul {
+  margin: 25px;
+  padding-bottom: 20px;
+}
+main ul > li > a {
+  text-decoration: none;
+  font-size: 25px;
+  padding: 10px;
+}
+section {
+  background-color: white;
+  padding: 25px;
+}
+section > h2{
+  padding-bottom: 5px;
+}
+.backgrond,
+.education {
+  margin: 20px;
+}
+section + section {
+  background-color: rgb(220, 216, 216);
+}
+.ulDesign{
+    column-count: 2;
+    list-style: none;
+ }
+ .ulDesign > li{
+     padding: 16px;
+ }
+section + section + section {
+  background-color: white;
+}
+.projects {
+  margin: 20px;
+}
+label{
+    display: block;
+}
+section:last-of-type{
+    background-color: rgb(220, 216, 216);
+}
+section input,textarea{
+    width: 99%;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+.buttonSend{
+    background-color: rgb(54, 52, 52);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+.buttonSend:hover{
+    background-color: rgb(44, 43, 43);
+    cursor: pointer;
+}
+footer{
+    background-color: rgb(54, 52, 52);
+    text-align: center;
+    color: white;
+    padding: 15px;
+}
+
+
