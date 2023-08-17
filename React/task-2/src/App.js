@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Notes from "./components/Notes";
 import NewNote from "./components/NewNote";
@@ -6,29 +5,29 @@ import EditNote from "./components/EditNote";
 import { useState } from "react";
 
 function App() {
-  const [notlar, setNotlar] = useState([]);
+  const [notes, setnotes] = useState([]);
   const [editingNote, setEditingNote] = useState(null);
 
   const handleAddNote = (newNote) => {
-    const newId = notlar.length + 1;
-    setNotlar([...notlar, { id: newId, content: newNote }]);
+    const newId = notes.length + 1;
+    setnotes([...notes, { id: newId, content: newNote }]);
   };
 
   const handleDeleteNote = (id) => {
-    const updatedNotes = notlar.filter((note) => note.id !== id);
-    setNotlar(updatedNotes);
+    const updatedNotes = notes.filter((note) => note.id !== id);
+    setnotes(updatedNotes);
   };
 
   const handleEditNote = (id) => {
-    const noteToEdit = notlar.find((note) => note.id === id);
+    const noteToEdit = notes.find((note) => note.id === id);
     setEditingNote(noteToEdit);
   };
 
   const handleSaveEdit = (editedNote) => {
-    const updatedNotes = notlar.map((note) =>
+    const updatedNotes = notes.map((note) =>
       note.id === editingNote.id ? { ...note, content: editedNote } : note
     );
-    setNotlar(updatedNotes);
+    setnotes(updatedNotes);
     setEditingNote(null);
   };
 
@@ -37,7 +36,7 @@ function App() {
       <h1>Notes App</h1>
       <div className="container">
         <Notes
-          notes={notlar}
+          notes={notes}
           onDelete={handleDeleteNote}
           onEdit={handleEditNote}
         />
