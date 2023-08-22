@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Matrix",
+      "surname": "1999",
+      "email": "asda@gmail.com"
+    },
+    {
+      "name": "sadsad",
+      "surname": "SOLAK",
+      "email": "sadas@gmail.com",
+      "id": 2
+    },
+    {
+      "name": "ewqe",
+      "surname": "eqweqw",
+      "email": "dassss@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "heheheheh",
+      "surname": "eheheh",
+      "email": "asdas@gmail.com",
+      "id": 4
+    }
+  ]
+}
